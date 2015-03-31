@@ -3,15 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Backbone.js + RequireJS • TodoMVC</title>
-		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<!-- <link rel="stylesheet" href="node_modules/todomvc-common/base.css"> -->
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 		<link rel="stylesheet" href="css/custom.css">
 	</head>
 	<body>
 		<section id="todoapp">
 			<header id="header">
-				<h1>todos</h1>
-				<input id="new-todo" placeholder="What needs to be done?" autofocus>
+				<h1>timer todos</h1>
+				<input id="new-todo" placeholder="What needs to be done" autofocus>
+				<span class="new-todo-title">in</span>
+				<input id="new-todo-minutes" placeholder="10">
+				<span class="new-todo-title">minutes?</span>
 			</header>
 			<section id="main">
 				<input id="toggle-all" type="checkbox">
