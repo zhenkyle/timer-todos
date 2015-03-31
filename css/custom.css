@@ -242,7 +242,7 @@ label[for='toggle-all'] {
 	text-decoration: line-through;
 }
 
-#todo-list li .destroy {
+#todo-list li .destroy, #todo-list li .countdown {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -257,7 +257,12 @@ label[for='toggle-all'] {
 	transition: color 0.2s ease-out;
 }
 
-#todo-list li .destroy:hover {
+#todo-list li .countdown {
+	right: 40px;
+}
+
+
+#todo-list li .destroy:hover, #todo-list li .countdown:hover {
 	color: #af5b5e;
 }
 
@@ -265,7 +270,11 @@ label[for='toggle-all'] {
 	content: '×';
 }
 
-#todo-list li:hover .destroy {
+#todo-list li .countdown:after {
+	content: '>';
+}
+
+#todo-list li:hover .destroy, #todo-list li:hover .countdown {
 	display: block;
 }
 
