@@ -1,7 +1,12 @@
 <div class="view">
 	<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-	<label><%- title %></label>
+	<label><%- title %></label> in <label>10</label> minutes
 	<button class="countdown"></button>
 	<button class="destroy"></button>
 </div>
-<input class="edit" value="<%- title %>">
+<div class="edit">
+	<input value="<%- title %>">
+	in
+	<input value="10">
+	minutes
+</div>

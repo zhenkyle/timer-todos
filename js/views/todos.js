@@ -39,7 +39,7 @@ define([
 			this.$el.toggleClass('completed', this.model.get('completed'));
 
 			this.toggleVisible();
-			this.$input = this.$('.edit');
+			this.$input = this.$('.edit input:first');
 			return this;
 		},
 

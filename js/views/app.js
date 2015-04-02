@@ -32,7 +32,7 @@ define([
 		// loading any preexisting todos that might be saved in *localStorage*.
 		initialize: function () {
 			this.allCheckbox = this.$('#toggle-all')[0];
-			this.$input = this.$('#new-todo');
+			this.$input = this.$('#new-todo input:first');
 			this.$footer = this.$('#footer');
 			this.$main = this.$('#main');
 			this.$todoList = this.$('#todo-list');
